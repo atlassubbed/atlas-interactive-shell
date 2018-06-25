@@ -96,5 +96,3 @@ shell.log().onDone(err => console.error(err)).onData(stderr => {
   stderr && console.log(stderr)
 })
 ```
-
-
