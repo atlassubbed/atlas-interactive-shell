@@ -1,0 +1,26 @@
+{
+  "name": "atlas-interactive-shell",
+  "version": "1.0.0",
+  "description": "Runs a shell command interactively, abstracts useful callbacks as opposed to manually listening for events.",
+  "scripts": {
+    "test-server": "mocha --colors --watch --recursive './test/**/*.test.js'",
+    "test": "mocha --colors --recursive './test/**/*.test.js'"
+  },
+  "main": "./src/index.js",
+  "private": true,
+  "keywords": [],
+  "author": "atlassubbed <atlassubbed@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "engines": {
+    "node": "^10.1.0",
+    "npm": "^6.0.1"
+  }
+}
