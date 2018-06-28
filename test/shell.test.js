@@ -161,11 +161,11 @@ describe("interactive shell", function(){
       new Shell("node " + join(r, "stdout.js")).onDone(() => done())
     })
     it("should only ever be called once when the command errors out", function(done){
-      new Shell(join(r, "stdout.js")).onData((err, res, reply) => {
+      new Shell("node " + join(r, "dne.js")).onData((err, res, reply) => {
         reply(new Error(err))
       }).onDone(err => {
         expect(err).to.be.an("error");
-        expect(err.message).to.contain("Permission denied")
+        expect(err.message).to.contain("Cannot find module")
         done()
       })
     })
