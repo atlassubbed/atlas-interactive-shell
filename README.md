@@ -2,6 +2,8 @@
 
 Runs a shell command interactively, abstracts useful callbacks as opposed to manually listening for events.
 
+[![Travis](https://img.shields.io/travis/atlassubbed/atlas-interactive-shell.svg)](https://travis-ci.org/atlassubbed/atlas-interactive-shell)
+
 ---
 
 ## install
