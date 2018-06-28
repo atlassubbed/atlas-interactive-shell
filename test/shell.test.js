@@ -91,7 +91,7 @@ describe("interactive shell", function(){
 
     describe("can reply to stdout", function(done){
       it("should pass a reply function to the callback's third argument", function(done){
-        new Shell(join(r, "node stdout.js")).onData((err, out, reply) => {
+        new Shell("node " + join(r, "stdout.js")).onData((err, out, reply) => {
           expect(reply).to.be.a("function");
           done();
         })
